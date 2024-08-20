@@ -1,0 +1,57 @@
+.recipe-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    max-width: 1200px;
+    margin: 50px 20px;
+    text-align: center;
+  }
+
+  .recipe-list .card {
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.05);
+    background: #fff;
+    padding: 50px 0;
+    border-radius: 8px;
+  }
+
+  .recipelist-title {  
+    margin-bottom: 4px;
+    font-size: 26px;
+  }
+
+  .recipelist-subtitle {
+    color: #555;
+    font-size: 18px;
+  }
+
+  .recipe-cooking-time {
+    color: #999;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .recipe-list .card a {
+    color: #555;
+    text-decoration: none;
+    background: #f4f0ec;
+    font-size: 20px;
+    text-align: center;
+    padding: 12px 20px;
+    border-radius: 4px;
+  }
+
+  @media screen and (max-width: 900px) { 
+
+    .recipe-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+  }
+
+  @media screen and (max-width: 650px) { 
+
+  .recipe-list {
+    grid-template-columns: 1fr;
+  }
+
+}
